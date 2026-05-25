@@ -18,8 +18,8 @@ def run_daily_job():
 scheduler.add_job(
     run_daily_job,
     trigger="cron",
-    hour=8,
-    minute=0
+    hour=4,
+    minute="*"
 )
 
 scheduler.start()
